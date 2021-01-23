@@ -4,7 +4,7 @@ title: 'Conclusion'
 hidden: false
 ---
 
-<!-- TODO: koko kurssin recap -->
+
 
 In this last part we looked into data visualization, displaying media programmatically and some third party libraries. We also took some time to create a little asteroid game. If you feel insipired you can keep adding features to the game you made.
 

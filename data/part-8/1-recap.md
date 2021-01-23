@@ -5,11 +5,7 @@ title: 'Short recap'
 hidden: false
 ---
 
-<!-- <text-box variant='learningObjectives' name='Oppimistavoitteet'>
 
-- Kertaat materiaalin osien 1-7 sisältöä.
-
-</text-box> -->
 
 <text-box variant='learningObjectives' name='Learning Objectives'>
 
@@ -17,27 +13,17 @@ hidden: false
 
 </text-box>
 
-<!-- Alla on annettuna kurssimateriaalin osien 1-7 sisältöä kertaavia tehtäviä. Tehtävänannot ovat samoja kuin mitä materiaalissa on aiemmin esiintynyt. Vaikka olisit tehnyt osan tehtävistä aiemmin, tee ne nyt uudestaan ilman omaan aiempaan ratkaisuun turvautumista. -->
+
 
 Below there are a few exercises that go over the material introduced in the parts 1-7. The assignments are identical to some exercises that have appeared earlier in the material. If you have completed some of the exercises before, please solve them again without looking at your earlier solution.
 
 <programming-exercise name='Cubes' tmcname='part08-Part08_01.Cubes'>
 
-<!-- Kirjoita ohjelma, joka lukee merkkijonoja käyttäjältä kunnes käyttäjä syöttää merkkijonon "loppu". Mikäli syöte ei ole "loppu", ohjelman tulee käsitellä syöte lukuna ja tulostaa syötetyn luvun kuutio (eli luku * luku * luku). Alla on muutamia tulostusesimerkkejä -->
+
 
 Write a program that reads strings from the user until the user inputs the string "end". As long as the input is not "end" the program should handle the input as an integer and print the cube of the integer (meaning number * number * number). Below are some sample outputs
 
-<!-- <sample-output>
 
-**3**
-27
-**-1**
--1
-**11**
-1331
-**loppu**
-
-</sample-output> -->
 
 <sample-output>
 
@@ -51,11 +37,7 @@ Write a program that reads strings from the user until the user inputs the strin
 
 </sample-output>
 
-<!-- <sample-output>
 
-**loppu**
-
-</sample-output> -->
 
 <sample-output>
 
@@ -68,14 +50,14 @@ Write a program that reads strings from the user until the user inputs the strin
 
 <programming-exercise name='Average of positive numbers' tmcname='part08-Part08_02.AverageOfPositiveNumbers'>
 
-<!-- Kirjoita ohjelma, joka lukee käyttäjältä kokonaislukuja kunnes käyttäjä syöttää luvun 0. Tämän jälkeen ohjelma tulostaa syötteessä esiintyneiden positiivisten (eli nollaa suurempien lukujen) keskiarvon. -->
+
 Write a number that asks user for input until the user inputs 0.
 After this, the program prints the average of the positive numbers (numbers that are greater than zero).
 
-<!-- Mikäli ohjelmassa ei syötetä yhtäkään positiivista lukua, ohjelman tulee tulostaa "keskiarvon laskeminen ei ole mahdollista". -->
+
 If no positive number is inputted, the program prints "Cannot calculate the average"
 
-<!-- Alla on muutamia esimerkkejä ohjelman toiminnasta. -->
+
 Below a few examples of the program's output
 
 <sample-output>
@@ -287,31 +269,31 @@ Second: 0/100
 
 <programming-exercise name='Liquid Containers 2.0 (2 parts)' tmcname='part08-Part08_04.LiquidContainers2'>
 
-<!-- Toteutetaan edellä kuvattu interaktiivinen ohjelma kahden nestesäiliön käsittelyyn uudestaan. Tällä kertaa luodaan ohjelman toteutusta varten luokka "Sailio", jonka vastuulla on säiliön sisällön ylläpito. -->
+
 
 Let's redo the previous program for handling two liquid containers. This time we'll create a class `Container`, which is responsible for managing the contents of a container.
 
 
 <h2>Container</h2>
 
-<!-- Toteuta luokka Sailio. Säiliöllä tulee olla parametriton konstruktori sekä seuraavat metodit: -->
+
 Make a class called `Container`. The class must have a constructor which does not take any parameters, and the following methods:
 
-<!-- - `public int sisalto()` palauttaa säiliössä olevan nesteen määrän kokonaislukuna. -->
+
  -  `public int contains()` which returns the amount of liquid in a container as an integer.
 
-<!-- - `public void add(int maara)` lisää parametrina annetun määrän nestettä säiliöön. Mikäli parametrin arvo on negatiivinen, ei nestettä lisätä. Lisäyksen jälkeen säiliössä on korkeintaan 100 yksikköä nestettä. -->
+
  -  `public void add(int amount)` which adds the amount of liquid given as a parameter to the container. If the amount is negative, no liquid is added.
  A container can hold maximum of 100 units of liquid.
  
-<!-- - `public void remove(int maara)` poistaa parametrina annetun määrän nestettä säiliöstä. Mikäli parametrin arvo on negatiivinen, ei nestettä poisteta. Poistaminen poistaa vain olemassaolevaa nestettä -- poiston takia säiliössä ei voi koskaan olla alle nollaa nesteyksikköä. -->
+
  -  `public void remove(int amount)` which removes the amount of liquid given as a parameter from the container. If the amount is negative, no liquid is removed. A container can never hold less than 0 units of liquid.
 
-<!-- - `public String toString()` palauttaa olion merkkijonoesityksen muodossa "<em>sisalto</em>/100", esim "32/100". -->
+
  -  `public String toString()` which returns the container as a string formatted "<em>amount of liquid</em>/100", for example "32/100".
 
 
-<!-- Luokan käyttöesimerkki: -->
+
 The class should work as follows:
 
 ```java
@@ -342,11 +324,11 @@ System.out.println(container);
 
 <h2>Functionality</h2>
 
-<!-- Kopioi ensimmäisessä osassa toteuttamasi käyttöliittymä ja muokkaa sitä siten, että ohjelmassa käytetään juuri toteuttamiasi säiliöitä. Luokassa `NestesailiotOlioilla` olevan main-metodin suorituksen tulee käynnistää ohjelma. -->
+
 Copy the user interface you implemented for the previous example, and modify it to use the new `Container` class.
 The main method in the class `LiquidContainers2` must start the program.
 
-<!-- Alla on esimerkkitulostus. Ohjelman tekstikäyttöliittymän toiminnan tulee olla seuraavanlainen: -->
+
 Below is some sample output. The user interface should work as follows:
 
 <sample-output>
@@ -386,32 +368,11 @@ Second: 0/100
 
 <programming-exercise name='To do list (2 parts)' tmcname='part08-Part08_05.TodoList'>
 
-<!-- Tässä tehtävässä tehdään sovellus tehtävälistan luomiseen ja käsittelyyn. Lopullinen sovellus tulee toimimaan seuraavalla tavalla. -->
+
 
 In this exercise we are going to create a program that can be used to create and modify a to-do list. The final product will work in the following manner.
 
-<!-- <sample-output>
 
-Komento: **lisaa**
-Tehtävä: **käy kaupassa**
-Komento: **lisaa**
-Tehtävä: **imuroi**
-Komento: **listaa**
-1: käy kaupassa
-2: imuroi
-Komento: **valmis**
-Mikä valmistui? **2**
-Tehtävä käy kaupassa tehty
-Komento: **listaa**
-1: käy kaupassa
-Komento: **lisaa**
-Tehtävä: **ohjelmoi**
-Komento: **listaa**
-1: käy kaupassa
-2: ohjelmoi
-Komento: **lopeta**
-
-</sample-output> -->
 <sample-output>
 
 Command: **add**
@@ -435,19 +396,15 @@ Command: **stop**
 
 </sample-output>
 
-<!-- Tehdään sovellus osissa. -->
+
 
 We will build the program in parts.
 
-<!-- <h2>Tehtävälista</h2> -->
+
 
 <h2>TodoList</h2>
 
-<!-- Luo luokka `Tehtavalista`. Luokalla tulee olla parametriton konstruktori sekä seuraavat metodit:
 
-- `public void lisaa(String tehtava)` - lisää tehtävälistalle parametrina annetun tehtävän.
-- `public void tulosta()` - tulostaa tehtävät. Tulostuksessa jokaiselle tehtävällä on myös numero -- käytä tässä tehtävän indeksiä (+1).
-- `public void poista(int numero)` - poistaa annettua numeroa vastaavan tehtävän; numero liittyy tulostuksessa nähtyyn tehtävän numeroon. -->
 
 Create a class called `TodoList`. It should have a constructor without parameters and the following methods:
 
@@ -455,18 +412,7 @@ Create a class called `TodoList`. It should have a constructor without parameter
 - `public void print()` - prints the exercises. Each task has a number associated with it on the print statement -- use the task's index here (+1).
 - `public void remove(int number)` - removes the task associated with the given number; the number is the one seen associated with the task in the print.
 
-<!-- ```java
-Tehtavalista lista = new Tehtavalista();
-lista.lisaa("lue kurssimateriaalia");
-lista.lisaa("katso uusin fool us");
-lista.lisaa("ota rennosti");
 
-lista.tulosta();
-lista.poista(2);
-
-System.out.println();
-lista.tulosta();
-``` -->
 
 ```java
 TodoList list = new TodoList();
@@ -481,16 +427,7 @@ System.out.println();
 list.print();
 ```
 
-<!-- <sample-output>
 
-1: lue kurssimateriaalia
-2: katso uusin fool us
-3: ota rennosti
-
-1: lue kurssimateriaalia
-2: ota rennosti
-
-</sample-output> -->
 <sample-output>
 
 1: read the course material
@@ -502,28 +439,15 @@ list.print();
 
 </sample-output>
 
-<!-- **Huom!** Voit olettaa, että metodille `poista` syötetään oikea tehtävää vastaava numero. Metodin tarvitsee toimia oikein vain kerran kunkin tulostuskutsun jälkeen. -->
+
 
 **NB!** You may assume that the `remove` method is given a number that corresponds to a real task. The method only has to correctly work once after each print call.
 
-<!-- Toinen esimerkki: -->
+
 
 Another example:
 
-<!-- ```java
-Tehtavalista lista = new Tehtavalista();
-lista.lisaa("lue kurssimateriaalia");
-lista.lisaa("katso uusin fool us");
-lista.lisaa("ota rennosti");
-lista.tulosta();
-lista.poista(2);
-lista.tulosta();
-lista.lisaa("osta rusinoita");
-lista.tulosta();
-lista.poista(1);
-lista.poista(1);
-lista.tulosta();
-``` -->
+
 
 ```java
 TodoList list = new TodoList();
@@ -540,19 +464,7 @@ list.remove(1);
 list.print();
 ```
 
-<!-- <sample-output>
 
-1: lue kurssimateriaalia
-2: katso uusin fool us
-3: ota rennosti
-1: lue kurssimateriaalia
-2: ota rennosti
-1: lue kurssimateriaalia
-2: ota rennosti
-3: osta rusinoita
-1: osta rusinoita
-
-</sample-output> -->
 <sample-output>
 
 1: read the course material
@@ -567,18 +479,11 @@ list.print();
 
 </sample-output>
 
-<!-- <h2>Käyttöliittymä</h2> -->
+
 
 <h2>User interface</h2>
 
-<!-- Toteuta seuraavaksi luokka `Kayttoliittyma`. Luokalla `Kayttoliittyma` tulee olla kaksiparametrinen konstruktori. Ensimmäisenä parametrina annetaan luokan `Tehtavalista` ilmentymä ja toisena parametrina luokan `Scanner` ilmentymä. Konstruktorin lisäksi luokalla tulee olla metodi `public void kaynnista()`, joka käynnistää tekstikäyttöliittymän. Tekstikäyttöliittymä toteutetaan ikuisen toistolauseen (`while-true`) avulla, ja sen tulee tarjota seuraavat komennot:
 
-- Komento `lopeta` lopettaa toistolauseen suorituksen, jonka jälkeen ohjelman suoritus palaa `kaynnista`-metodista.
-- Komento `lisaa` kysyy käyttäjältä lisättävää tehtävää. Kun käyttäjä syöttää lisättävän tehtävän, tulee se lisätä tehtävälistalle.
-- Komento `listaa` tulostaa kaikki tehtävälistalla olevat tehtävät.
-- Komento `poista` kysyy käyttäjältä poistettavan tehtävän tunnusta ja poistaa käyttäjän syöttämää tunnusta vastaavan tehtävän tehtävälistalta.
-
-Alla on esimerkki sovelluksen toiminnasta. -->
 
 Next, implement a class called `UserInterface`. It should have a constructor with two parameters. The first parameter is an instance of the class `TodoList`, and the second is an instance of the class `Scanner`. In addition to the constructor, the class should have the method `public void start()` that is used to start the text user interface. The text UI works with an eternal looping statement (`while-true`), and it must offer the following commands to the user:
 
@@ -592,29 +497,7 @@ Next, implement a class called `UserInterface`. It should have a constructor wit
 
 Below is an example of how the program should work.
 
-<!-- <sample-output>
 
-Komento: **lisaa**
-Lisättävä: **kirjoita essee**
-Komento: **lisaa**
-Lisättävä: **lue kirja**
-Komento: **listaa**
-1: kirjoita essee
-2: lue kirja
-Komento: **poista**
-Mikä poistetaan? **1**
-Komento: **listaa**
-1: lue kirja
-Komento: **poista**
-Mikä poistetaan? **1**
-Komento: **listaa**
-Komento: **lisaa**
-Lisättävä: **lopeta**
-Komento: **listaa**
-1: lopeta
-Komento: **lopeta**
-
-</sample-output> -->
 
 <sample-output>
 
@@ -640,7 +523,7 @@ Command: **stop**
 
 </sample-output>
 
-<!-- Huom! Käyttöliittymän tulee käyttää sille parametrina annettua tehtävälistaa ja Scanneria. -->
+
 
 NB! The user interface is to use the TodoList and Scanner that are passed as parameters to the constructor.
 
